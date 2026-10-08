@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "shell": "powershell",
+            "command": "powershell -NoProfile -ExecutionPolicy Bypass -File \"$env:USERPROFILE\\.claude\\hooks\\notify.ps1\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}
